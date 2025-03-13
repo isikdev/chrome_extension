@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elementor Pro Admin</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="login-container" class="container">
+            <div class="login-header">
+                <img src="images/elementor-logo.png" alt="Elementor Pro Logo"
+                    class="logo">
+                <h1>Elementor Pro</h1>
+            </div>
+
+            <div class="login-form">
+                <div class="current-id">
+                    <p>Current ID: 607446088851566357</p>
+                </div>
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label for="username">Имя пользователя</label>
+                        <input type="text" id="username" name="username"
+                            placeholder="Введите имя пользователя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password"
+                            placeholder="Введите пароль">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="login-btn">Войти</button>
+                    </div>
+
+                    <div id="error-message" class="error-message"></div>
+                </form>
+            </div>
+        </div>
+
+        <div id="dashboard-container" class="container" style="display: none;">
+            <div class="dashboard-header">
+                <img src="images/elementor-logo.png" alt="Elementor Pro Logo"
+                    class="logo">
+                <h1>Панель управления</h1>
+            </div>
+
+            <div class="error-panel">
+                <div class="error-icon">⚠️</div>
+                <h2 class="error-title">Внимание! Произошла ошибка!</h2>
+                <p class="error-description">Не удалось подключиться к серверу
+                    Elementor Pro. Пожалуйста, проверьте соединение и попробуйте
+                    позже.</p>
+                <button id="logoutBtn" class="logout-btn">Выйти</button>
+            </div>
+        </div>
+
+        <script src="js/popup.js"></script>
+    </body>
+</html>
